@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faucet Agrotech Private Limited</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <div class="container"> -->
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                    <a href="index.html">Faucet Agrotech</a>
+                </div>
+                <ion-icon class="hamburger" onclick="openMenu()" name="menu" id="openMenu"></ion-icon>
+                <ion-icon name="close" class="hamburger" onclick="closeMenu()" id="closeMenu"></ion-icon>
+                <ul class="nav-links" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropLink" onclick="visible(0)" onmouseover="makeVisible('fertilizer.jpg','pesticides.html','Pesticides','herbicide.html','Herbicides','plant-growth.html','plant growth regulators')" onmouseleave="makeHidden()">Our Businesses <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                    <li class="selectHead" onclick="openSelect(0)">Our Businesses</li>
+                    <div class="dropSlect">
+                        <div class="select"><a href="pesticides.html">Pesticides</a></div>
+                        <div class="select"><a href="herbicides.html">Herbicides</a></div>
+                        <div class="select"><a href="plant-growth.html">Plant-Growth Regular</a></div>
+                    </div>
+                    <li class="dropLink" onclick="visible(1)" onmouseover="makeVisible('fertilizer.jpg','sales.html','sales and marketing','','Distribution Network','none','none')" onmouseleave="makeHidden()">Our Strength <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                    <li class="selectHead" onclick="openSelect(1)">Our Strength</li>
+                    <div class="dropSlect">
+                        <div class="select"><a href="sales.html">sales and marketing</a></div>
+                        <div class="select"><a href="#">Distribution Network</a></div>
+                    </div>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropLink" onclick="visible(2)" onmouseover="makeVisible('fertilizer.jpg','saftey.html','Health and safety','environment.html','enviournment & climate change','none','CSR')" onmouseleave="makeHidden()">Our Commitments <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                    <li class="selectHead" onclick="openSelect(2)">Our commitments</li>
+                    <div class="dropSlect">
+                        <div class="select"><a href="saftey.html">Health and safety</a></div>
+                        <div class="select"><a href="environment.html">Environment & climate change</a></div>
+                        <div class="select">CSR</div>
+                    </div>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            <!-- </div> -->
+        </nav>
+        
+    </header>
+
+    <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+        <img src="pesticides.jpg" alt="drop-img" class="drop-img">
+        <ul>
+            <li class="dropItm"><a href="pesticides.html">Pesticides</a></li>
+            <li class="dropItm"><a href="herbicides.html">Herbicides</a></li>
+        </ul>
+        <ul>
+            <li class="dropItm" style="margin-bottom: 40px;"><a href="plant-growth.html">Plant-Growth Regular</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+        <img src="distribution.jpg" alt="drop-img" class="drop-img">
+        <ul>
+            <li class="dropItm"><a href="sales.html">sales and marketing</a></li>
+            <li class="dropItm"><a href="#">Distribution Network</a></li>
+        </ul>
+        <ul>
+            <!-- <li class="dropItm" style="margin-bottom: 40px;"><a href="plant-growth.html">Plant-Growth Regular</a></li> -->
+        </ul>
+    </div>
+
+    <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+        <img src="environment.jpg" alt="drop-img" class="drop-img">
+        <ul>
+            <li class="dropItm"><a href="saftey.html">Health and safety</a></li>
+            <li class="dropItm"><a href="environment.html">Environment & climate change</a></li>
+        </ul>
+        <ul>
+            <li class="dropItm" style="margin-bottom: 40px;">CSR</li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="about" data-aos="fade-up">
+            <div class="container" data-aos="fade-up">
+                <img src="pesticides.jpg" alt="pesticides-img" class="topImg">
+                <h2 data-aos="fade-up">Pesticides Formulations
+                </h2>
+                <p data-aos="fade-up">
+                    Fungicide formulations by FAUCET AGROTECH PVT LTD, have been tried and tested and are a proven and
+                    highly-appreciated solution for powerful protection of crops. The Pesticides formulations of the
+                    major brands by FAUCET AGROTECH PVT LTD are as follows:
+                </p><br><br><br>
+
+                <div class="listedCtnr" style="max-width: 1000px;">
+                    <ul>
+                        <li><ion-icon name="checkbox"></ion-icon>Hexaconazole 5% SC
+                        <li><ion-icon name="checkbox"></ion-icon>Difenoconazole 25% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Propiconazole 25% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Sulphur 55.16% SC
+                        <li><ion-icon name="checkbox"></ion-icon>Cerbendazim 12% + Mancozeb 63% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Carbendazim 50% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Chlorothalonil 75% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Metalaxyl 8% + Mancozeb 64% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Thiophanate Methyl 70% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Tricyclazole 75% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Sulphur 80% WDG
+                        <li><ion-icon name="checkbox"></ion-icon>Mancozeb 75% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Tebuconazole 10% + Sulphur 65% WG
+                        <li><ion-icon name="checkbox"></ion-icon>Azoxyxtrobin 11% + Tebuconazole 18.3% SC
+                        <li><ion-icon name="checkbox"></ion-icon>Propineb 70% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Propiconazole 13.9% + Difenoconazole 13.9% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Metalaxyl 35% WS
+                        <li><ion-icon name="checkbox"></ion-icon>Cymoxanil 8% + Mancozeb 64% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Imidacloprid 30.5 % SC
+                        <li><ion-icon name="checkbox"></ion-icon>Imidacloprid 70 % WG
+                        <li><ion-icon name="checkbox"></ion-icon>Imidacloprid 30.5% SC
+                        <li><ion-icon name="checkbox"></ion-icon>Lambda Cyhalothrin 4.9% CS
+                        <li><ion-icon name="checkbox"></ion-icon>Lambda Cyhalothrin 5% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Cypermethrin 25% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Cypermethrin 10% EC
+                    </ul>
+                    <ul>
+                        <li><ion-icon name="checkbox"></ion-icon>Fipronil 5% SC
+                        <li><ion-icon name="checkbox"></ion-icon>Fipronil 80% WG
+                        <li><ion-icon name="checkbox"></ion-icon>Thiamethoxam 30% FS
+                        <li><ion-icon name="checkbox"></ion-icon>Thiamethoxam 25% WG
+                        <li><ion-icon name="checkbox"></ion-icon>Bifenthrin 10% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Profenofos 40% + Cypermethrin 4% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Profenofos 50% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Chlorpyriphos 20% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Monocrotophos 36% SL
+                        <li><ion-icon name="checkbox"></ion-icon>Emamectin Benzoate 5% SG
+                        <li><ion-icon name="checkbox"></ion-icon>Diafenthiuron 50% WP
+                        <li><ion-icon name="checkbox"></ion-icon>Acetamiprid 20% SP
+                        <li><ion-icon name="checkbox"></ion-icon>Acephate 75% Sp
+                        <li><ion-icon name="checkbox"></ion-icon>Cartap Hydrochloride 50% SP
+                        <li><ion-icon name="checkbox"></ion-icon>Fipronil 0.3% GR
+                        <li><ion-icon name="checkbox"></ion-icon>Thiamethoxam 12.6% + Lambda-Cyhalothrin 9.5% ZC
+                        <li><ion-icon name="checkbox"></ion-icon>Diafenthiuron 47.8% SC
+                        <li><ion-icon name="checkbox"></ion-icon>Emamectin Benzoate 1.9% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Thiamethoxam 75% SG
+                        <li><ion-icon name="checkbox"></ion-icon>Novaluron 5.25% + Indoxacarb 4.5% SC
+                        <li><ion-icon name="checkbox"></ion-icon>Phenthoate 50% EC
+                        <li><ion-icon name="checkbox"></ion-icon>Pyriproxyfen 10% + Bifenthrin 10% EC
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h4>Contact Us</h4>
+                <p>For inquiries, reach out to us via:</p>
+                <div class="contact-icons">
+                    <a href="mailto:info@faucetagrotech.com" target="_blank">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                    <a href="https://wa.me/9631755964" target="_blank">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                    <a href="https://instagram.com/faucetagrotech?igshid=ZGUzMzM3NWJiOQ=="><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/profile.php?id=100093529464522&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/faucet-agrotech-private-limit-474261274"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyRight">
+            <p>&copy; 2023 Faucet Agrotech Private Limited</p>
+            <p>Developed and Mantained by <a style="text-decoration: line-through;" href="http://www.rassgroups.link">RASS GROUPS</a> </p>
+
+        </div>
+    </footer>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 20
+        });
+    </script>
+</body>
+
+</html>

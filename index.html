@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faucet Agrotech Private Limited</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        b{
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header style="background: transparent;">
+        <nav class="navbar" style="background: transparent;">
+            <!-- <div class="container"> -->
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+                <a href="index.html">Faucet Agrotech</a>
+            </div>
+            <ion-icon class="hamburger" onclick="openMenu()" name="menu" id="openMenu"></ion-icon>
+            <ion-icon name="close" class="hamburger" onclick="closeMenu()" id="closeMenu"></ion-icon>
+            <ul class="nav-links" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropLink" onclick="visible(0)"
+                    onmouseover="makeVisible('fertilizer.jpg','pesticides.html','Pesticides','herbicide.html','Herbicides','plant-growth.html','plant growth regulators')"
+                    onmouseleave="makeHidden()">Our Businesses <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                <div class="selectCtnr">
+                    <li class="selectHead" onclick="openSelect(0)">Our Businesses</li>
+                    <div class="dropSlect">
+                        <div class="select"><a href="pesticides.html">Pesticides</a></div>
+                        <div class="select"><a href="herbicides.html">Herbicides</a></div>
+                        <div class="select"><a href="plant-growth.html">Plant-Growth Regular</a></div>
+                    </div>
+                </div>
+                <li class="dropLink" onclick="visible(1)"
+                    onmouseover="makeVisible('fertilizer.jpg','sales.html','sales and marketing','','Distribution Network','none','none')"
+                    onmouseleave="makeHidden()">Our Strength <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                <div class="selectCtnr">
+                    <li class="selectHead" onclick="openSelect(1)">Our Strength</li>
+                    <div class="dropSlect">
+                        <div class="select"><a href="sales.html">sales and marketing</a></div>
+                        <div class="select"><a href="#">Distribution Network</a></div>
+                    </div>
+                </div>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropLink" onclick="visible(2)"
+                    onmouseover="makeVisible('fertilizer.jpg','saftey.html','Health and safety','environment.html','enviournment & climate change','none','CSR')"
+                    onmouseleave="makeHidden()">Our Commitments <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                <div class="selectCtnr">
+                    <li class="selectHead" onclick="openSelect(2)">Our commitments</li>
+                    <div class="dropSlect">
+                        <div class="select"><a href="saftey.html">Health and safety</a></div>
+                        <div class="select"><a href="environment.html">Environment & climate change</a></div>
+                        <div class="select">CSR</div>
+                    </div>
+                </div>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <!-- </div> -->
+        </nav>
+
+    </header>
+    <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+        <img src="pesticides.jpg" alt="drop-img" class="drop-img">
+        <ul>
+            <li class="dropItm"><a href="pesticides.html">Pesticides</a></li>
+            <li class="dropItm"><a href="herbicides.html">Herbicides</a></li>
+        </ul>
+        <ul>
+            <li class="dropItm" style="margin-bottom: 40px;"><a href="plant-growth.html">Plant-Growth Regular</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+        <img src="distribution.jpg" alt="drop-img" class="drop-img">
+        <ul>
+            <li class="dropItm"><a href="sales.html">sales and marketing</a></li>
+            <li class="dropItm"><a href="#">Distribution Network</a></li>
+        </ul>
+        <ul>
+            <!-- <li class="dropItm" style="margin-bottom: 40px;"><a href="plant-growth.html">Plant-Growth Regular</a></li> -->
+        </ul>
+    </div>
+
+    <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+        <img src="environment.jpg" alt="drop-img" class="drop-img">
+        <ul>
+            <li class="dropItm"><a href="saftey.html">Health and safety</a></li>
+            <li class="dropItm"><a href="environment.html">Environment & climate change</a></li>
+        </ul>
+        <ul>
+            <li class="dropItm" style="margin-bottom: 40px;">CSR</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <div class="video-container">
+        <!-- Video Background -->
+        <video autoplay loop muted class="slides">
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- <img src="background-1.jpg" alt="background-img" class="slides"><img src="background-2.jpg" alt="background-img" class="slides"> -->
+
+        <!-- Image Mask -->
+        <div class="video-mask"></div>
+
+        <!-- Card Content -->
+        <div class="card-content">
+            <div class="container up-card">
+                <h1>Welcome to Faucet Agrotech</h1>
+                <p>Your Partner in Innovative Farming Solutions</p>
+                <a href="products.html" class="button">Explore Our Products</a>
+            </div>
+            <div class="mid-card">
+                <div class="mid-content">Strengthening the hands that feed the world</div>
+            </div>
+            <div class="lower-card">
+                <div class="card-1 cards" onclick="changeText(0)"><b>1</b>
+                    <p class="texts">Strengthening the hands that feed the world</p>
+                    <div class="strip"></div>
+                    <div class="playstrip"></div>
+                </div>
+                <div class="card-2 cards" onclick="changeText(1)"><b>2</b>
+                    <p class="texts">Supporting farmers with innovative solutions</p>
+                    <div class="strip"></div>
+                    <div class="playstrip"></div>
+                </div>
+                <div class="card-3 cards" onclick="changeText(2)"><b>3</b>
+                    <p class="texts">Strengthening the fields that grow the world's food</p>
+                    <div class="strip"></div>
+                    <div class="playstrip"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="vision" data-aos="fade-up" style="margin-bottom: 40px;">
+            <div class="container" style="display: flex; flex-direction: column; justify-content: center;">
+                <!-- <h2 style="text-align: center;">Our Visions</h2> -->
+                <img class="topImg" src="vision.jpg" alt="Image" style="margin:20px auto;">
+                <ul>
+                    <li>Our scared vision is to provide quality pesticides for plant protection, to help farmers by
+                        finding
+                        appropriate solutions for their problems, and offering optimum use of inputs.
+                    </li>
+                    <li>Our ultimate aim is to increase agricultural output, help farmers prosper and enable them to
+                        contribute
+                        to the nation's economy.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mission" data-aos="fade-up">
+            <div class="container " style="display: flex; flex-direction: column; justify-content: center;">
+                <!-- <h2 style="text-align: center;">Our Missions</h2> -->
+                <img class="topImg" src="mission.jpg" alt="Image" style="margin:20px auto;">
+                <ul>
+                    <li>Our mission is to provide comprehensive agricultural solutions right from sowing to harvest,
+                        aimed
+                        towards the objective of improving sustainability & profitability of farm holdings through
+                        continuous
+                        investment in research & development while imbibing strong corporate governance values.
+                    </li>
+                    <li>To upgrade and effectively utilize operational resources to realize performance excellence and
+                        expand
+                        product portfolio on an ongoing basis to ensure significant business growth. To manufacture
+                        high-quality
+                        products with continuous improvement by innovation and commitment to health, safety, and the
+                        environment.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="values" data-aos="fade-up">
+            <div class="container " style="display: flex; flex-direction: column; justify-content: center;">
+                <h2 style="text-align: center;">Our Values</h2>
+                <img class="topImg" src="values.jpg" alt="Image" style="margin:20px auto;">
+                <ul>
+                    <b>TRUST.</b> <br>
+                    <li> the earth, we are dependable. We work with integrity of purpose, honesty in action and fairness in all our dealings.
+                    </li><br>
+                    <b>SPEED.</b><br> 
+                    <li>Blazing ahead, like fire. Quick and agile, like fire we constantly strive to work with speed in the way we observe, think and act.
+                    </li><br>
+                    <b>ADAPTABILITY. </b><br>
+                    <li>Adaptive, like water. Constantly transforming ourselves like water, we are nimble footed and highly responsive to change.
+                    </li><br>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <!-- Add more sections and content as needed -->
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h4>Contact Us</h4>
+                <p>For inquiries, reach out to us via:</p>
+                <div class="contact-icons">
+                    <a href="mailto:info@faucetagrotech.com" target="_blank">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                    <a href="https://wa.me/9631755964" target="_blank">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                    <a href="https://instagram.com/faucetagrotech?igshid=ZGUzMzM3NWJiOQ=="><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/profile.php?id=100093529464522&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/faucet-agrotech-private-limit-474261274"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyRight">
+            <p>&copy; 2023 Faucet Agrotech Private Limited</p>
+            <p>Developed and Mantained by <a style="text-decoration: line-through;" href="http://www.rassgroups.link">RASS GROUPS</a> </p>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 20
+        });
+    </script>
+</body>
+
+</html>

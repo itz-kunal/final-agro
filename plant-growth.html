@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faucet Agrotech Private Limited</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <div class="container"> -->
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                    <a href="index.html">Faucet Agrotech</a>
+                </div>
+                <ion-icon class="hamburger" onclick="openMenu()" name="menu" id="openMenu"></ion-icon>
+                <ion-icon name="close" class="hamburger" onclick="closeMenu()" id="closeMenu"></ion-icon>
+                <ul class="nav-links" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropLink" onclick="visible(0)" onmouseover="makeVisible('fertilizer.jpg','pesticides.html','Pesticides','herbicide.html','Herbicides','plant-growth.html','plant growth regulators')" onmouseleave="makeHidden()">Our Businesses <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                    <li class="selectHead" onclick="openSelect(0)">Our Businesses</li>
+                    <div class="dropSlect">
+                        <div class="select"><a href="pesticides.html">Pesticides</a></div>
+                        <div class="select"><a href="herbicides.html">Herbicides</a></div>
+                        <div class="select"><a href="plant-growth.html">Plant-Growth Regular</a></div>
+                    </div>
+                    <li class="dropLink" onclick="visible(1)" onmouseover="makeVisible('fertilizer.jpg','sales.html','sales and marketing','','Distribution Network','none','none')" onmouseleave="makeHidden()">Our Strength <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                    <li class="selectHead" onclick="openSelect(1)">Our Strength</li>
+                    <div class="dropSlect">
+                        <div class="select"><a href="sales.html">sales and marketing</a></div>
+                        <div class="select"><a href="#">Distribution Network</a></div>
+                    </div>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropLink" onclick="visible(2)" onmouseover="makeVisible('fertilizer.jpg','saftey.html','Health and safety','environment.html','enviournment & climate change','none','CSR')" onmouseleave="makeHidden()">Our Commitments <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                    <li class="selectHead" onclick="openSelect(2)">Our commitments</li>
+                    <div class="dropSlect">
+                        <div class="select"><a href="saftey.html">Health and safety</a></div>
+                        <div class="select"><a href="environment.html">Environment & climate change</a></div>
+                        <div class="select">CSR</div>
+                    </div>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            <!-- </div> -->
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="about" data-aos="fade-up">
+            <div class="container" data-aos="fade-up">
+                <img src="plant-growth.jpg" alt="plant-img" class="topImg">
+                <h2 data-aos="fade-up">Ensuring Efficient and High-Quality Best
+                </h2>
+                <p data-aos="fade-up">
+                    FAUCET AGROTECH PVT LTD is one of the leading plant growth regulators manufacturers that formulates
+                    plant hormones to ensure bounteous and healthy agricultural production. <br><br>
+
+                    FAUCET AGROTECH PVT LTD has not only emerged as a leader in the Indian market but owing to its
+                    innovatively excellent phytohormones they have achieved a decent presence in the global market,
+                    emerging as one of the leading and trustable plant growth regulators exporters. Our range of plant
+                    hormones manages the plant growth gracefully while maximizing the return on your investment. It aids
+                    in efficient harvesting of the crop with no or minimum regrowth..
+                </p><br><br><br>
+                <h2 data-aos="fade-up">Technical Formulations
+                </h2>
+                <p data-aos="fade-up">
+                    FAUCET AGROTECH PVT LTD plant growth regulators boost the yield and quality of your crop production
+                    with its unique formulations as shown below.
+                    . <br><br>
+                </p>
+                <div class="listedCtnr">
+                    <ul>
+                        <li><ion-icon name="checkbox"></ion-icon>Humic Acid 80% + Fulvic Acid 15%
+                        <li><ion-icon name="checkbox"></ion-icon>Gibberellic Acid 0.001% L
+                        <li><ion-icon name="checkbox"></ion-icon>Ethephon 39% SL
+                        <li><ion-icon name="checkbox"></ion-icon>Amino Acid Liquid
+                        <li><ion-icon name="checkbox"></ion-icon>Chlormequat chloride 50% SL
+                        <li><ion-icon name="checkbox"></ion-icon>Amino Acid
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+            <img src="pesticides.jpg" alt="drop-img" class="drop-img">
+            <ul>
+                <li class="dropItm"><a href="pesticides.html">Pesticides</a></li>
+                <li class="dropItm"><a href="herbicides.html">Herbicides</a></li>
+            </ul>
+            <ul>
+                <li class="dropItm" style="margin-bottom: 40px;"><a href="plant-growth.html">Plant-Growth Regular</a></li>
+            </ul>
+        </div>
+    
+        <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+            <img src="distribution.jpg" alt="drop-img" class="drop-img">
+            <ul>
+                <li class="dropItm"><a href="sales.html">sales and marketing</a></li>
+                <li class="dropItm"><a href="#">Distribution Network</a></li>
+            </ul>
+            <ul>
+                <!-- <li class="dropItm" style="margin-bottom: 40px;"><a href="plant-growth.html">Plant-Growth Regular</a></li> -->
+            </ul>
+        </div>
+    
+        <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+            <img src="environment.jpg" alt="drop-img" class="drop-img">
+            <ul>
+                <li class="dropItm"><a href="saftey.html">Health and safety</a></li>
+                <li class="dropItm"><a href="environment.html">Environment & climate change</a></li>
+            </ul>
+            <ul>
+                <li class="dropItm" style="margin-bottom: 40px;">CSR</li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h4>Contact Us</h4>
+                <p>For inquiries, reach out to us via:</p>
+                <div class="contact-icons">
+                    <a href="mailto:info@faucetagrotech.com" target="_blank">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                    <a href="https://wa.me/9631755964" target="_blank">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                    <a href="https://instagram.com/faucetagrotech?igshid=ZGUzMzM3NWJiOQ=="><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/profile.php?id=100093529464522&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/faucet-agrotech-private-limit-474261274"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyRight">
+            <p>&copy; 2023 Faucet Agrotech Private Limited</p>
+            <p>Developed and Mantained by <a style="text-decoration: line-through;" href="http://www.rassgroups.link">RASS GROUPS</a> </p>
+
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 20
+        });
+    </script>
+</body>
+
+</html>

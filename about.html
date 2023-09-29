@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faucet Agrotech Private Limited</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <div class="container"> -->
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                    <a href="index.html">Faucet Agrotech</a>
+                </div>
+                <ion-icon class="hamburger" onclick="openMenu()" name="menu" id="openMenu"></ion-icon>
+                <ion-icon name="close" class="hamburger" onclick="closeMenu()" id="closeMenu"></ion-icon>
+                <ul class="nav-links" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropLink" onclick="visible(0)" onmouseover="makeVisible('fertilizer.jpg','pesticides.html','Pesticides','herbicide.html','Herbicides','plant-growth.html','plant growth regulators')" onmouseleave="makeHidden()">Our Businesses <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                    <li class="selectHead" onclick="openSelect(0)">Our Businesses</li>
+                    <div class="selectCtnr">
+                    <div class="dropSlect">
+                        <div class="select"><a href="pesticides.html">Pesticides</a></div>
+                        <div class="select"><a href="herbicides.html">Herbicides</a></div>
+                        <div class="select"><a href="plant-growth.html">Plant-Growth Regular</a></div>
+                    </div>
+                    </div>
+                    <li class="dropLink" onclick="visible(1)" onmouseover="makeVisible('fertilizer.jpg','sales.html','sales and marketing','','Distribution Network','none','none')" onmouseleave="makeHidden()">Our Strength <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                    <li class="selectHead" onclick="openSelect(1)">Our Strength</li>
+                    <div class="selectCtnr">
+                    <div class="dropSlect">
+                        <div class="select"><a href="sales.html">sales and marketing</a></div>
+                        <div class="select"><a href="#">Distribution Network</a></div>
+                    </div>
+                    </div>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropLink" onclick="visible(2)" onmouseover="makeVisible('fertilizer.jpg','saftey.html','Health and safety','environment.html','enviournment & climate change','none','CSR')" onmouseleave="makeHidden()">Our Commitments <ion-icon name="chevron-down-outline"></ion-icon> </li>
+                    <li class="selectHead" onclick="openSelect(2)">Our commitments</li>
+                    <div class="selectCtnr">
+                    <div class="dropSlect">
+                        <div class="select"><a href="saftey.html">Health and safety</a></div>
+                        <div class="select"><a href="environment.html">Environment & climate change</a></div>
+                        <div class="select">CSR</div>
+                    </div>
+                    </div>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            <!-- </div> -->
+        </nav>
+        
+    </header>
+
+    <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+        <img src="pesticides.jpg" alt="drop-img" class="drop-img">
+        <ul>
+            <li class="dropItm"><a href="pesticides.html">Pesticides</a></li>
+            <li class="dropItm"><a href="herbicides.html">Herbicides</a></li>
+        </ul>
+        <ul>
+            <li class="dropItm" style="margin-bottom: 40px;"><a href="plant-growth.html">Plant-Growth Regular</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+        <img src="distribution.jpg" alt="drop-img" class="drop-img">
+        <ul>
+            <li class="dropItm"><a href="sales.html">sales and marketing</a></li>
+            <li class="dropItm"><a href="#">Distribution Network</a></li>
+        </ul>
+        <ul>
+            <!-- <li class="dropItm" style="margin-bottom: 40px;"><a href="plant-growth.html">Plant-Growth Regular</a></li> -->
+        </ul>
+    </div>
+
+    <div class="dropdown" onmouseover="keepIt()" onmouseleave="makeHidden()">
+        <img src="environment.jpg" alt="drop-img" class="drop-img">
+        <ul>
+            <li class="dropItm"><a href="saftey.html">Health and safety</a></li>
+            <li class="dropItm"><a href="environment.html">Environment & climate change</a></li>
+        </ul>
+        <ul>
+            <li class="dropItm" style="margin-bottom: 40px;">CSR</li>
+        </ul>
+    </div>
+    <div class="video-container" style="height: auto; padding-top: 50px;">
+        <!-- Image Background -->
+        <img style="width: 100%;" src="aboutusbg.jpg" alt="image" >
+
+        <!-- Image Mask -->
+        <div class="video-mask" style="clip-path: polygon(0% 100%, 70% 100%, 100% 80%, 100% 100%,0% 100%); "></div>
+
+        <!-- Card Content -->
+        <div class="card-content">
+            <div class="container up-card">
+                <h1>Welcome to Faucet Agrotech</h1>
+                <p>Your Partner in Innovative Farming Solutions</p>
+                <a href="products.html" class="button">Explore Our Products</a>
+            </div>
+            <div class="mid-card">
+                <div class="mid-content">Strengthening the hands that feed the world</div>
+            </div>
+            <div class="lower-card">
+                <div class="card-1 cards" onclick="changeText(0)"><b>1</b>
+                    <p class="texts">Strengthening the hands that feed the world</p>
+                    <div class="strip"></div>
+                    <div class="playstrip"></div>
+                </div>
+                <div class="card-2 cards" onclick="changeText(1)"><b>2</b>
+                    <p class="texts">Supporting farmers with innovative solutions</p>
+                    <div class="strip"></div>
+                    <div class="playstrip"></div>
+                </div>
+                <div class="card-3 cards" onclick="changeText(2)"><b>3</b>
+                    <p class="texts">Strengthening the fields that grow the world's food</p>
+                    <div class="strip"></div>
+                    <div class="playstrip"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="about" data-aos="fade-up" style=" padding-top: 20px;">
+            <div class="container" data-aos="fade-up">
+                <h2 data-aos="fade-up">About Us</h2>
+                <p data-aos="fade-up">
+                    Faucet Agrotech Private Limited. has been servicing the agrochemical industry of Indian markets,
+                    with its niche product offerings. A research-driven organization, Faucet Agrotech aims to offer
+                    high-quality, innovative, effective crop-protection and food safety solutions to our farmer and
+                    serve the globe through agriculture. <br><br>
+
+                    With a wide range of product offerings starting from Technicals, Intermediates & novel Formulations
+                    in the form of Insecticides, Herbicides, Fungicides, Plant-Growth Regulators, and Public Health
+                    Products, Faucet Agrotech Private Ltd. team creates efficient agro solutions for the clients by
+                    carefully observing the market, closely monitoring the on-field trends, understanding their
+                    requirements and surpassing their expectations. Our products are well-researched, economically
+                    priced, easily accessible Pan-India, and expanding reach globally.
+                </p><br><br><br>
+                <p data-aos="fade-up">
+                    Faucet Agrotech Private Limited (FAPL) is the brainchild of highly experienced professionals with an
+                    objective of providing innovative products to farmers to maximize their farm output.. <br><br>
+
+                    We are an agrochemical company engaged in the business of manufacturing, distributing, and marketing
+                    of a wide range of agro chemical formulations such as insecticides, fungicides, herbicides, plant
+                    growth regulator, micro fertilizers and antibiotic to the B2C and B2B customers. We also engage in
+                    the marketing and distribution of agrochemical products under brands in-licensed by us, owned by us
+                    and through generic brands, to Indian farmers through our distribution network. We provide crop
+                    protection solutions to the farmer to assist them to maximize productivity and profitability. We
+                    sell our agrochemical products in granules, powder and liquid forms our customers. Additionally, we
+                    manufacture and sell general insect and pest control chemicals for Public Health and Animal Health
+                    protection.<br><br>
+
+                    With an aim to offer a wide product portfolio across the agri-value chain, we continue to expand our
+                    product portfolio by introducing new products. We sell various formulations of insecticides,
+                    fungicide and herbicides, plant growth regulators, micro fertilizers and antibiotics.<br><br>
+
+                    Among our Promoters, MR. SUJIT KUMAR SINHA & MR. MITHUN KUMAR who are our Managing Directors, has
+                    over 28 years of experience in the agrochemical industry. Our management team is backed by a core
+                    technical team that has vast experience in manufacturing and also has the required technical
+                    know-how to manufacture the products which our Company is catering to.<br><br>
+
+                    Our wide range of products consists of high quality Eco friendly agrochemicals starts
+                    from insecticides, herbicides, fungicides, fumigants, plant growth regulators to rodenticides etc to
+                    cater every arena in the agricultural sector of crops, horticulture and floriculture. We, at Faucet
+                    Agrotech, are constantly evolving and evaluating our products, finding novel solutions to the
+                    problems of Indian farmers. We are committed to optimum utilization of resources and innovative
+                    initiatives for well being of our farming community. The company is fully committed and have adopted
+                    a strategy of continuous expansion and development of high valued brands with a thrust on
+                    registration and marketing according to our customer needs and requirements to maintain its
+                    portfolio on a long run.<br>
+                </p>
+            </div>
+        </section>
+
+        <!-- Add more sections and content as needed -->
+        <section class="team" data-aos="fade-up">
+            <div class="container">
+                <h2>Our Management</h2>
+                <p>Meet the passionate and dedicated members of our team:</p>
+                <ul class="team-members">
+                    <li>
+                        <img src="director-2.png" alt="Team Member 1" style="width: 150px;">
+                        <h3>MR. SUJIT KUMAR SINHA</h3>
+                        <p style="margin-bottom: 5px;">(MANAGING DIRECTOR)</p>
+                        <p><b>Adress : </b> H/O, Sunil Kumar, Opp. S2 Mall, Near Mahindra Genuine Parts Godown, East Side Nahar, Patel Colony Road, Shitla Nagar, Patna-800007 (Bihar)</p>
+                        <p><b>Email Id :</b>  info@faucetagrotech.com</p>
+                        <p><b>Contact Number :</b> +91-8092350733</p>
+                    </li>
+                    <li>
+                        <img src="director-1.png" alt="Team Member 2" style="width: 260px;">
+                        <h3>MR. MITHUN KUMAR</h3>
+                        <p style="margin-bottom: 5px;">(MANAGING DIRECTOR)</p>
+                        <p><b>Adress :</b>  H/O, Sunil Kumar, Opp. S2 Mall, Near Mahindra Genuine Parts Godown, East Side Nahar, Patel Colony Road, Shitla Nagar, Patna-800007 (Bihar)</p>
+                        <p><b>Email Id :</b> info@faucetagrotech.com</p>
+                        <p><b>Contact Number :</b> +91-9631755964</p>
+                    
+
+                    </li>
+                    <!-- Add more team members as needed -->
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">            
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h4>Contact Us</h4>
+                <p>For inquiries, reach out to us via:</p>
+                <div class="contact-icons">
+                    <a href="mailto:info@faucetagrotech.com" target="_blank">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                    <a href="https://wa.me/9631755964" target="_blank">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                    <a href="https://instagram.com/faucetagrotech?igshid=ZGUzMzM3NWJiOQ=="><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/profile.php?id=100093529464522&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/faucet-agrotech-private-limit-474261274"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyRight">
+            <p>&copy; 2023 Faucet Agrotech Private Limited</p>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <p>Developed and Mantained by <a style="text-decoration: line-through;" href="http://www.rassgroups.link">RASS GROUPS</a> </p>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 20
+        });
+    </script>
+</body>
+
+</html>
